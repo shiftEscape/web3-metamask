@@ -1,5 +1,6 @@
 .container {
   padding: 0 2rem;
+  background: #1A1923;
 }
 
 .main {
@@ -74,6 +75,7 @@
 }
 
 .card {
+  background: #FFF;
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
@@ -82,19 +84,14 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  width: 450px;
 }
 
 .card h2 {
   margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 .card p {
@@ -106,6 +103,34 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.inputGroup .label {
+  color: #6e6e6e;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #a19ebd;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin-top: 0.5em;
+}
+
+.switcher {
+  padding: 10px 0;
+}
+
+.buttonCheck {
+  background: none;
+  border: none;
+  color: #27528E;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 2em;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
