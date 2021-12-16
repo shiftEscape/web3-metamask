@@ -11,7 +11,7 @@ export default function CurrencyRow(props: CurrencyRowProps) {
   return (
     <div className={styles.inputGroup}>
       <small className={styles.label}>{ currency }</small>
-      <input className={styles.input} type="number" placeholder="0.00" value={amount} onChange={onChangeAmount}/>
+      <input className={styles.input} type="text" placeholder="0.00" value={amount} onChange={onChangeAmount}/>
     </div>
   )
 }
