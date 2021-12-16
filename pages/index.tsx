@@ -1,7 +1,9 @@
-import type { NextPage } from 'next'
+import type { NextPage } from 'next';
 import { useState } from 'react';
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import SwapImage from '../public/switch.png';
+import styles from '../styles/Home.module.css';
 import CurrencyInput from '../components/CurrencyInput';
 
 const Home: NextPage = () => {
@@ -49,7 +51,9 @@ const Home: NextPage = () => {
             onChangeAmount={handleFromAmountChange}
             amount={fromAmount}
           ></CurrencyInput>
-          <div className={styles.switcher}></div>
+          <div className={styles.switcher}>
+            <Image src={SwapImage} alt="Switch" width={24} height={24}></Image>
+          </div>
           <CurrencyInput
             currency={'BUSD'}
             onChangeAmount={handleToAmountChange}
